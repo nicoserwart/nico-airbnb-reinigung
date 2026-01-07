@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Airbnb-Reinigung Aargau | Nico Serwart</title>
+  <meta name="description" content="Zuverlässige Airbnb-Reinigung im Aargau. 40 CHF pro Zimmer. Flexibel, mobil, eigenes Putzmaterial. Nico Serwart, Bremgarten." />
+  <style>
+    :root{
+      --bg:#0b1220;--card:#111b33;--text:#eaf0ff;--muted:#b9c6ea;
+      --accent:#7aa2ff;--accent2:#66e3c4;--border:rgba(255,255,255,.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:radial-gradient(1000px 600px at 10% 10%, rgba(122,162,255,.25), transparent 60%),
+                 radial-gradient(800px 500px at 90% 20%, rgba(102,227,196,.18), transparent 55%),var(--bg);
+      color:var(--text);line-height:1.5;
+    }
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px 54px}
+    header{
+      display:flex;justify-content:space-between;align-items:center;gap:16px;
+      padding:16px 18px;border:1px solid var(--border);border-radius:18px;
+      background:rgba(17,27,51,.65);backdrop-filter:blur(10px)
+    }
+    .brand b{font-size:16px}
+    .brand span{font-size:13px;color:var(--muted)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:13px}
+    nav a:hover{color:var(--text)}
+    .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;margin-top:22px}
+    .card{
+      border:1px solid var(--border);background:rgba(17,27,51,.72);
+      border-radius:20px;padding:22px;backdrop-filter:blur(10px)
+    }
+    h1{margin:0 0 10px;font-size:34px}
+    .lead{color:var(--muted);font-size:15px}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:11px 14px;border-radius:14px;text-decoration:none;
+      font-weight:600;font-size:14px;border:1px solid var(--border);
+      background:rgba(255,255,255,.06);color:var(--text)
+    }
+    .btnPrimary{
+      background:linear-gradient(135deg,#25D366,#128C7E);
+      border:none;color:#061021
+    }
+    .btnEmail{
+      background:linear-gradient(135deg,rgba(122,162,255,.95),rgba(102,227,196,.75));
+      border:none;color:#061021
+    }
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .badge{
+      font-size:12px;border:1px solid var(--border);
+      padding:8px 10px;border-radius:999px
+    }
+    ul{color:var(--muted)}
+    footer{margin-top:24px;color:var(--muted);font-size:12px;text-align:center}
+    @media(max-width:860px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">
+    <b>Nico Serwart</b>
+    <span>Airbnb-Reinigung • Bremgarten AG • mobil & flexibel</span>
+  </div>
+  <nav>
+    <a href="#service">Service</a>
+    <a href="#preise">Preise</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="card">
+    <h1>Zuverlässige Airbnb-Reinigung im Aargau</h1>
+    <p class="lead">
+      Ich unterstütze Airbnb-Hosts mit gründlicher Reinigung nach jedem Aufenthalt.
+      <b>40 CHF pro Zimmer</b>, flexible Zeiten (morgens oder abends),
+      eigenes Auto & eigenes Putzmaterial.
+    </p>
+
+    <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
+      <a class="btn btnPrimary" href="https://wa.me/41799563619">💬 WhatsApp schreiben</a>
+      <a class="btn btnEmail" href="mailto:nicoserwart@gmail.com?subject=Airbnb%20Reinigung%20Anfrage">
+        ✉️ E-Mail senden
+      </a>
+    </div>
+
+    <div class="badges">
+      <div class="badge">✅ 40 CHF pro Zimmer</div>
+      <div class="badge">🚗 Eigenes Auto</div>
+      <div class="badge">🧼 Eigenes Putzmaterial</div>
+      <div class="badge">⏰ Flexibel verfügbar</div>
+    </div>
+  </div>
+
+  <div class="card" id="service">
+    <h2>Leistungen</h2>
+    <ul>
+      <li>Reinigung nach Gäste-Checkout</li>
+      <li>Küche, Bad, Böden, Oberflächen</li>
+      <li>Staubwischen & Saugen</li>
+      <li>Müll entsorgen (nach Absprache)</li>
+    </ul>
+
+    <h2 id="preise">Preise</h2>
+    <p class="lead"><b>40 CHF pro Zimmer</b><br>
+    Beispiel: 2.5-Zimmer-Wohnung ≈ 100 CHF</p>
+  </div>
+</div>
+
+<div class="card" id="kontakt" style="margin-top:18px">
+  <h2>Über mich</h2>
+  <p class="lead">
+    Mein Name ist <b>Nico Serwart</b>, ich bin 23 Jahre alt und wohne in
+    <b>Bremgarten (Aargau)</b>.  
+    Ich arbeite in der Sicherheitsbranche und studiere nebenbei,
+    um später Primarlehrer zu werden.
+    Dadurch suche ich flexible Einsätze und bin zeitlich gut anpassbar.
+  </p>
+</div>
+
+<footer>
+  © <span id="y"></span> Nico Serwart • Bremgarten AG
+</footer>
+</div>
+
+<script>
+document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
